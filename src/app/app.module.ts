@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +25,7 @@ const firebase={
     AngularFireModule.initializeApp(firebase),
     AngularFireAuthModule
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })

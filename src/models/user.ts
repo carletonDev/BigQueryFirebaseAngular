@@ -9,5 +9,4 @@ export interface User{
     //photoURL
     // uid
     //providerData
-    password?:string;
 }
